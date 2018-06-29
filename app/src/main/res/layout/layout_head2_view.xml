@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30pt">
+        <TextView
+            android:id="@+id/transaction_item_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="0.0000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可用USDT"
+            android:textSize="@dimen/txt_10"
+            android:layout_marginBottom="30pt"
+            android:layout_below="@+id/transaction_item_balance"/>
+
+        <TextView
+            android:id="@+id/risk_ratio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/risk_tatio"
+            android:textSize="@dimen/txt_10"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20pt"
+        android:background="@color/colorButtonDisable"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30pt"
+        android:paddingTop="50pt">
+        <RadioButton
+            android:id="@+id/price_type_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_indicatrix_blue"
+            android:text="买入"
+            android:button="@null"
+            android:padding="30pt"
+            android:checked="true"
+            android:textSize="@dimen/txt_18"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            />
+
+        <RadioButton
+            android:id="@+id/price_type_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_indicatrix_blue"
+            android:text="卖出"
+            android:button="@null"
+            android:padding="30pt"
+           android:layout_marginLeft="30pt"
+            android:textSize="@dimen/txt_18"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"/>
+    </RadioGroup>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginLeft="30pt"
+        android:layout_marginRight="30pt"
+        android:background="@drawable/shape_frame_gray">
+        <Spinner
+            android:id="@+id/transaction_price_type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50"
+            android:background="@color/trantracent" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"/>
+
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@drawable/shape_frame_gray"
+        android:layout_marginLeft="30pt"
+        android:layout_marginRight="30pt"
+        android:layout_marginTop="@dimen/space_10"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_2">
+        <TextView
+            android:id="@+id/transction_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="价格（ETC）"
+            android:paddingLeft="@dimen/space_10"/>
+        <TextView
+            android:id="@+id/transction_price_editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_10"
+            android:maxLines="1"
+            android:hint="价格"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@drawable/shape_frame_gray"
+        android:layout_marginLeft="30pt"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginRight="30pt"
+        android:padding="@dimen/space_2">
+        <TextView
+            android:id="@+id/transction_count_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:maxLines="1"
+            android:inputType="numberDecimal"
+            android:text="数量（BTC）"
+            android:paddingLeft="@dimen/space_10"/>
+        <TextView
+            android:id="@+id/transaction_count_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/space_10"
+            android:text="BTC"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+
+
+    <com.sskj.bfex.v.widget.mychart.BubbleSeekBar
+        android:id="@+id/transcation_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bsb_bubble_color="@color/red_eb"
+        android:layout_marginLeft="30pt"
+        android:layout_marginRight="30pt"
+        android:layout_marginTop="@dimen/space_20"
+        app:bsb_bubble_text_color="@color/gray_e7"
+        app:bsb_max="1000.0"
+        app:bsb_min="0"
+        app:bsb_progress="0"
+        app:bsb_second_track_color="@color/red_eb"
+        app:bsb_section_count="1"
+        app:bsb_section_text_position="bottom_sides"
+        app:bsb_show_progress_in_float="true"
+        app:bsb_show_section_mark="true"
+        app:bsb_show_section_text="true"
+        app:bsb_hide_bubble="true"
+        app:bsb_show_thumb_text="false"
+        app:bsb_track_color="@color/gray_e7"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@drawable/shape_frame_gray"
+        android:layout_marginLeft="30pt"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginRight="30pt"
+        android:padding="@dimen/space_2">
+        <TextView
+            android:id="@+id/transction_count_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:maxLines="1"
+            android:inputType="numberDecimal"
+            android:text="金额（USDT）"
+            android:paddingLeft="@dimen/space_10"/>
+        <TextView
+            android:id="@+id/transaction_sum_value"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/space_10"
+            android:text="1"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/transaction_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_10"
+        android:layout_marginLeft="120pt"
+        android:layout_marginBottom="30pt"
+        android:layout_marginRight="120pt"
+        android:layout_marginTop="30pt"
+        android:text="@string/transaction_input_btn"
+        android:background="@drawable/shape_rectangle_green_r15"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="@dimen/txt_18"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20pt"
+        android:layout_marginTop="30pt"
+        android:background="@color/colorButtonDisable"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交易订单"
+            android:textStyle="bold"
+            android:textSize="@dimen/txt_18"
+            android:padding="30pt"/>
+
+        <TextView
+            android:id="@+id/transaction_history_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_bill"
+            android:layout_gravity="center|right"
+            android:gravity="center"
+            android:padding="30pt"
+            android:text="全部" />
+    </FrameLayout>
+
+</LinearLayout>

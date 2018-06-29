@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="92pt"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="金额"
+            android:textColor="@color/fabi_unselect_tab_text_color"
+            android:textSize="24pt" />
+
+        <ImageView
+            android:id="@+id/iv_money_arrow"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/tv_money" />
+
+        <ImageView
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30pt"
+            android:src="@mipmap/icon_logout" />
+
+
+        <ImageView
+            android:id="@+id/iv_pay_type_arrow"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_pay_type"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/iv_pay_type_arrow"
+            android:gravity="center"
+            android:text="支付方式"
+            android:textColor="@color/fabi_unselect_tab_text_color"
+            android:textSize="24pt" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5pt" />
+
+    <com.shizhefei.view.coolrefreshview.CoolRefreshView
+        android:id="@+id/coolRefreshView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.shizhefei.view.coolrefreshview.CoolRefreshView>
+</LinearLayout>

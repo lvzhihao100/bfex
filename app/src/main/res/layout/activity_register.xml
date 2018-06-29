@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <TextView
+        android:id="@+id/tv_goto_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="30pt"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@color/colorTextGreen"
+        android:textSize="30pt"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingEnd="60pt"
+        android:paddingStart="60pt">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160pt"
+            android:gravity="center"
+            android:text="手机注册"
+            android:textColor="@color/colorDarkGreen"
+            android:textSize="60pt"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100pt"
+            android:layout_marginTop="280pt">
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="手机号码"
+                android:inputType="number"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:textSize="36pt" />
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/delete" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_next_step"
+            android:layout_width="match_parent"
+            android:layout_height="90pt"
+            android:layout_marginTop="80pt"
+            android:background="@drawable/selector_login"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@android:color/white"
+            android:textSize="38pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_email_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50pt"
+            android:gravity="center"
+            android:text="邮箱注册"
+            android:textColor="@color/colorTextGreen"
+            android:textSize="30pt"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+</RelativeLayout>

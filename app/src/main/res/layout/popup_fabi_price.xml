@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#66000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120pt"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="40pt">
+
+        <EditText
+            android:layout_width="530pt"
+            android:layout_height="87pt"
+            android:background="#eeeeee"
+            android:gravity="center_vertical"
+            android:padding="15pt"
+            android:text="系统筛选包含目标金额的商品"
+            android:textColor="#999999" />
+
+        <Button
+            android:layout_width="160pt"
+            android:layout_height="87pt"
+            android:background="@color/fabi_bottom_sheet_green_color"
+            android:text="筛选"
+            android:textColor="@color/white"
+            android:textSize="30pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

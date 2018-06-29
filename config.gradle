@@ -1,0 +1,103 @@
+ext {
+
+    android = [compileSdkVersion       : 26,
+               buildToolsVersion       : "27.0.1",
+               minSdkVersion           : 17,
+               targetSdkVersion        : 26,
+               versionCode             : 1,
+               versionName             : "1.0",
+               androidSupportSdkVersion: "26.1.0",
+               retrofitSdkVersion      : "2.1.0",
+               dagger2SdkVersion       : "2.6",
+               rxlifecycleSdkVersion   : "2.2.1",
+               espressoSdkVersion      : "2.2.2",
+               rxbindingSdkVersion     : "2.0.0"
+    ]
+
+    dependencies = [
+            //分包
+            "multidex"                 : "com.android.support:multidex:1.0.2",
+            "androidJUnitRunner"       : "android.support.test.runner.AndroidJUnitRunner",
+            "javax.annotation"         : "javax.annotation:jsr250-api:1.0",
+            "appcompat-v7"             : "com.android.support:appcompat-v7:${android["androidSupportSdkVersion"]}",
+            "compat"                   : "com.android.support:compat:${android["androidSupportSdkVersion"]}",
+            "design"                   : "com.android.support:design:${android["androidSupportSdkVersion"]}",
+            "support-v4"               : "com.android.support:support-v4:${android["androidSupportSdkVersion"]}",
+            "cardview-v7"              : "com.android.support:cardview-v7:${android["androidSupportSdkVersion"]}",
+            "annotations"              : "com.android.support:support-annotations:${android["androidSupportSdkVersion"]}",
+            "recyclerview-v7"          : "com.android.support:recyclerview-v7:${android["androidSupportSdkVersion"]}",
+            "junit"                    : "junit:junit:4.12",
+            "runner"                   : 'com.android.support.test:runner:0.5',
+            "espresso-core"            : "com.android.support.test.espresso:espresso-core:${android["espressoSdkVersion"]}",
+            "espresso-contrib"         : ("com.android.support.test.espresso:espresso-contrib:${android["espressoSdkVersion"]}"),
+            "espresso-intents"         : "com.android.support.test.espresso:espresso-intents:${android["espressoSdkVersion"]}",
+            //内存泄漏检测
+            "canary-debug"             : "com.squareup.leakcanary:leakcanary-android:1.4-beta2",
+            "canary-release"           : "com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2",
+            //网络请求
+            "retrofit"                 : "com.squareup.retrofit2:retrofit:${android["retrofitSdkVersion"]}",
+            "retrofit-converter-gson"  : "com.squareup.retrofit2:converter-gson:${android["retrofitSdkVersion"]}",
+            "retrofit-adapter-rxjava"  : "com.squareup.retrofit2:adapter-rxjava2:${android["retrofitSdkVersion"]}",
+
+            "okhttp3"                  : "com.squareup.okhttp3:okhttp:3.2.0",
+            "okhttp-urlconnection"     : "com.squareup.okhttp:okhttp-urlconnection:2.0.0",
+            //json数据解析
+            "gson"                     : "com.google.code.gson:gson:2.8.2",
+
+            "butterknife"              : "com.jakewharton:butterknife:8.4.0",
+            "butterknife-apt"          : "com.jakewharton:butterknife-compiler:8.4.0",
+            //rx系列
+            "rxandroid"                : "io.reactivex.rxjava2:rxandroid:2.0.1",
+            "rxjava"                   : "io.reactivex.rxjava2:rxjava:2.1.0",
+            //rx生命周期绑定
+            "rxlifecycle"              : "com.trello.rxlifecycle2:rxlifecycle:${android["rxlifecycleSdkVersion"]}",
+            "rxlifecycle-components"   : "com.trello.rxlifecycle2:rxlifecycle-components:${android["rxlifecycleSdkVersion"]}",
+            "rxbinding"                : "com.jakewharton.rxbinding2:rxbinding:${android["rxbindingSdkVersion"]}",
+            "rxbinding-recyclerview-v7": "com.jakewharton.rxbinding2:rxbinding-recyclerview-v7:${android["rxbindingSdkVersion"]}",
+            "rxbinding-support-v4"     : "com.jakewharton.rxbinding2:rxbinding-support-v4:${android["rxbindingSdkVersion"]}",
+            "rxbinding-design"         : "com.jakewharton.rxbinding2:rxbinding-design:${android["rxbindingSdkVersion"]}",
+            "rxbinding-appcompat-v7"   : "com.jakewharton.rxbinding2:rxbinding-appcompat-v7:${android["rxbindingSdkVersion"]}",
+            //rx权限申请
+            "rxpermissions"            : "com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar",
+            //ios滚轮选择器
+            "pickerview"               : "com.contrarywind:Android-PickerView:3.2.5",
+            //依赖注入
+            "dagger2"                  : "com.google.dagger:dagger:${android["dagger2SdkVersion"]}",
+            "dagger2-apt-compiler"     : "com.google.dagger:dagger-compiler:${android["dagger2SdkVersion"]}",
+            //动画兼容
+            "nineoldandroids"          : "com.nineoldandroids:library:2.4.0",
+            "paginate"                 : "com.github.markomilos:paginate:0.5.1",
+            //二维码生成与解析
+            "zxing-library"            : "cn.yipianfengye.android:zxing-library:2.1",
+            //桌面消息数量提示
+            "ShortcutBadger"           : "me.leolin:ShortcutBadger:1.1.13@aar",
+            //图片框架
+            "glide"                    : "com.github.bumptech.glide:glide:4.3.1",
+            "glide-compiler"           : "com.github.bumptech.glide:compiler:4.3.1",
+            "glide-okhttp3"            : "com.github.bumptech.glide:okhttp3-integration:4.3.1",
+            "glide-transformations"    : "jp.wasabeef:glide-transformations:3.0.1",
+            //网络封装框架
+            "okgo"                     : "com.lzy.net:okgo:3.0.1",
+            "okrx2"                    : "com.lzy.net:okrx2:2.0.1",
+            "okserver"                 : "com.lzy.net:okserver:2.0.1",
+            //百分比屏幕适配
+            "rudeness"                 : "com.bulong.rudeness:rudeness:0.1.4@aar",
+            //下拉刷新
+            "SmartRefreshLayout"       : "com.scwang.smartrefresh:SmartRefreshLayout:1.0.5.1",
+            "SmartRefreshHeader"       : "com.scwang.smartrefresh:SmartRefreshHeader:1.0.5.1",
+            //viewpager 指示器
+            "FlycoTabLayout_Lib"       : "com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar",
+            //二维码
+            "bga-qrcode-zxing"         : "cn.bingoogolapple:bga-qrcode-zxing:1.2.1",
+            //recyclerview适配器
+            "slimadapter"              : "net.idik:slimadapter:2.1.2",
+            //弹出对话框
+            "material-dialogs-core"    : "com.afollestad.material-dialogs:core:0.9.6.0",
+            "material-dialogs-commons" : "com.afollestad.material-dialogs:commons:0.9.6.0",
+            //加载Loading
+            "avi-library"              : "com.wang.avi:library:2.1.3",
+/*            -keep class com.wang.avi.** { *; }
+            -keep class com.wang.avi.indicators.** { *; }*/
+
+    ]
+}

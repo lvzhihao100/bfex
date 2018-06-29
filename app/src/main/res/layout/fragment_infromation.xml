@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sskj.bfex.v.fragment.InformationFragment">
+
+    <com.sskj.bfex.common.widget.HeyTabLayout
+        android:id="@+id/info_tab"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        app:tabIndicatorColor="@color/red_eb"
+        app:tabIndicatorHeight="1.5dp">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="头条" />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="平台公告" />
+    </com.sskj.bfex.common.widget.HeyTabLayout>
+
+    <FrameLayout
+        android:id="@+id/info_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</LinearLayout>

@@ -1,0 +1,224 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="30pt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="73pt"
+                android:text="可用"
+                android:textSize="30pt"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40pt"
+                android:layout_marginTop="50pt"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="0.0000 USDT"
+                    android:textSize="30pt"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="40pt"
+                    android:layout_height="40pt"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10pt"
+                    android:src="@mipmap/icon_quersion"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="88pt"
+                android:text="提币地址"
+                android:textSize="30pt"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100pt"
+                android:layout_marginTop="20pt">
+
+                <EditText
+                    android:id="@+id/et_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="30pt"
+                    android:gravity="center_vertical"
+                    android:hint="输入或长按粘贴地址"
+                    android:maxLines="1"
+                    android:paddingRight="100pt"
+                    android:singleLine="true"
+                    android:textSize="30pt"/>
+
+                <ImageView
+                    android:id="@+id/iv_address"
+                    android:layout_width="50pt"
+                    android:layout_height="50pt"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="30pt"
+                    android:src="@mipmap/icon_address"/>
+
+                <View
+                    android:id="@+id/view_line_v"
+                    android:layout_width="2pt"
+                    android:layout_height="40pt"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10pt"
+                    android:layout_toStartOf="@+id/iv_address"
+                    android:background="#cccccc"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80pt"
+                android:text="数量"
+                android:textSize="30pt"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100pt"
+                android:layout_marginTop="20pt">
+
+                <EditText
+                    android:id="@+id/et_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:hint="最小提币数量10"
+                    android:inputType="numberDecimal"
+                    android:paddingEnd="200pt"
+                    android:singleLine="true"
+                    android:textSize="30pt"/>
+
+                <TextView
+                    android:id="@+id/tv_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="30pt"
+                    android:gravity="center_vertical|right"
+                    android:text="全部"
+                    android:textStyle="bold"/>
+
+                <View
+                    android:id="@+id/view_line"
+                    android:layout_width="2pt"
+                    android:layout_height="40pt"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20pt"
+                    android:layout_marginStart="20pt"
+                    android:layout_toStartOf="@+id/tv_all"
+                    android:background="#cccccc"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toStartOf="@id/view_line"
+                    android:gravity="center_vertical"
+                    android:text="USDT"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_max_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18pt"
+                android:text="可提现最大数量（USTD）: 0000.00"
+                android:textColor="#595959"
+                android:textSize="30pt"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64pt"
+                android:text="支付密码"
+                android:textSize="30pt"/>
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="100pt"
+                android:layout_marginTop="24pt"
+                android:gravity="center_vertical"
+                android:hint="请输入交易密码"
+                android:inputType="textPassword"
+                android:textSize="36pt"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64pt"
+                android:text="手机验证码"
+                android:textSize="30pt"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120pt">
+
+                <Button
+                    android:id="@+id/bt_send_code"
+                    android:layout_width="252pt"
+                    android:layout_height="87pt"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="30pt"
+                    android:background="#5B8EDA"
+                    android:gravity="center"
+                    android:text="发送验证码"
+                    android:textColor="@android:color/white"
+                    android:textSize="30pt"/>
+
+                <EditText
+                    android:id="@+id/et_check_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/bt_send_code"
+                    android:gravity="center_vertical"
+                    android:hint="请输入手机验证码"
+                    android:textSize="36pt"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/bt_withdraw"
+                android:layout_width="match_parent"
+                android:layout_height="90pt"
+                android:layout_marginBottom="30pt"
+                android:layout_marginEnd="30pt"
+                android:layout_marginTop="130pt"
+                android:background="@drawable/selector_login"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="提币"
+                android:textColor="@android:color/white"
+                android:textSize="36pt"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

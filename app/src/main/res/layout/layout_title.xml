@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.sskj.bfex.common.widget.ToolBarLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_img="@mipmap/icon_back"
+        android:background="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="30pt"
+        android:paddingTop="@dimen/space_10"
+        android:text="身份认证"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:textSize="60pt" />
+</merge>

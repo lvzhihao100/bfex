@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorTradeBg">
+
+    <com.sskj.bfex.common.widget.ToolBarLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:right_img="@mipmap/icon_a_pre"
+        app:title_color="@color/white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2pt"
+        android:background="@color/colorTradeLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120pt"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="34pt"
+                android:textStyle="bold"
+                tools:text="-8976.23" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20pt"
+                android:textColor="@android:color/white"
+                android:textSize="30pt"
+                android:text="动态权益" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="34pt"
+                android:textStyle="bold"
+                tools:text="-8976.23" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20pt"
+                android:text="可用资金"
+                android:textColor="@android:color/white"
+                android:textSize="30pt" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="34pt"
+                android:textStyle="bold"
+                tools:text="-8976.23" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20pt"
+                android:textColor="@android:color/white"
+                android:textSize="30pt"
+                android:text="冻结保证金" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20pt"
+        android:background="@color/colorTradeLine" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120pt"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_content_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="34pt"
+                android:textStyle="bold"
+                tools:text="-8976.23" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20pt"
+                android:textColor="@android:color/white"
+                android:textSize="30pt"
+                android:text="浮动盈亏" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="34pt"
+                android:textStyle="bold"
+                tools:text="-8976.23" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20pt"
+                android:text="平仓盈亏"
+                android:textColor="@android:color/white"
+                android:textSize="30pt" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_content_f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="34pt"
+                android:textStyle="bold"
+                tools:text="-8976.23" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20pt"
+                android:textColor="@android:color/white"
+                android:textSize="30pt"
+                android:text="风险率" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20pt"
+        android:background="@color/colorTradeLine" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/slidingTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100pt"
+        app:tabIndicatorColor="@color/blue_5d"
+        app:tabTextColor="@color/white"
+        app:tabSelectedTextColor="@color/blue_5d"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

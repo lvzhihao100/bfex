@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.sskj.bfex.v.activity.PayPwdSettingActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30pt"
+        android:text="8-20位字符，不可以是纯数字" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30pt"
+        android:layout_marginRight="30pt"
+        android:layout_marginTop="@dimen/space_20">
+
+        <EditText
+            android:id="@+id/pay_pwd_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50"
+            android:hint="请输入支付密码"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:background="@drawable/selector_indicatrix_red"
+            android:maxEms="20"
+            android:digits="@string/pwd_filter"
+            android:maxLines="1"
+            android:minEms="8" />
+
+        <CheckBox
+            android:id="@+id/pay_pwd_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:button="@drawable/selector_show_or_hide"
+            android:paddingRight="@dimen/space_2" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30pt"
+        android:layout_marginRight="30pt"
+        android:layout_marginTop="@dimen/space_20">
+
+        <EditText
+            android:id="@+id/pay_pwd_check_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50"
+            android:hint="确认支付密码"
+            android:inputType="textPassword"
+            android:background="@drawable/selector_indicatrix_red"
+            android:maxEms="20"
+            android:maxLines="1"
+            android:minEms="8" />
+
+        <CheckBox
+            android:id="@+id/pay_pwd_check_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:button="@drawable/selector_show_or_hide"
+            android:paddingRight="@dimen/space_2" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30pt"
+        android:textSize="@dimen/txt_20"
+        tools:text="@string/phone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30pt"
+        android:layout_marginRight="30pt"
+        android:layout_marginTop="@dimen/space_20">
+
+        <EditText
+            android:id="@+id/pay_pwd_auth_code_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50"
+            android:hint="请输入短信验证码"
+            android:background="@drawable/selector_indicatrix_red"
+            android:inputType="number"
+            android:maxLines="1" />
+
+        <CheckedTextView
+            android:id="@+id/pay_pwd_auth_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:background="@color/blue_5d"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:padding="@dimen/space_10"
+            android:text="获取验证码"
+            android:textColor="@color/white" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30pt"
+        android:background="@drawable/selector_login"
+        android:enabled="false"
+        android:text="提交"
+        android:textColor="@color/white" />
+</LinearLayout>

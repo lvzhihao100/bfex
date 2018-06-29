@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="280pt"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/item_buy_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18sp"
+        android:padding="@dimen/space_10"
+        tools:text="买入"/>
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_buy_type"/>
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"/>
+
+    <LinearLayout
+        android:id="@+id/item_left_layout"
+        android:layout_width="320pt"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/item_buy_type">
+        <TextView
+            android:id="@+id/item_trade_a"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/item_trade_b"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/item_trade_c"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            tools:text="数量"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_right_layout"
+        android:layout_toRightOf="@+id/item_left_layout"
+        android:layout_below="@+id/item_buy_type"
+        android:layout_width="260pt"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_trade_d"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/item_trade_e"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/item_trade_f"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+    <View
+        android:layout_width="@dimen/space_1"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/item_right_layout"
+        android:layout_below="@+id/item_buy_type"
+        android:background="@color/gray_c9"
+        android:paddingTop="@dimen/space_10"
+        android:paddingBottom="@dimen/space_10"/>
+
+
+
+    <TextView
+        android:id="@+id/item_revoke"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/trade_revoke"
+        android:layout_toRightOf="@+id/item_right_layout"
+        android:layout_below="@+id/item_buy_type"/>
+
+</RelativeLayout>
+

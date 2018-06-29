@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100pt"
+        android:layout_gravity="center_vertical"
+        android:paddingEnd="30pt"
+        android:paddingStart="30pt">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="80pt"
+            android:layout_height="80pt"
+            android:layout_centerVertical="true"
+            android:padding="15pt"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:id="@+id/tv_trade_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="36pt"
+            android:textStyle="bold"
+            tools:text="交易ID:1380045455445" />
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="80pt"
+            android:layout_height="80pt"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="15pt"
+            android:src="@mipmap/icon_a_pre" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120pt"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/trade_item_dtqy"
+            layout="@layout/item_trade"
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/trade_item_kyzj"
+            layout="@layout/item_trade"
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/trade_item_djbzj"
+            layout="@layout/item_trade"
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20pt"
+        android:background="@color/color_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120pt"
+        android:orientation="horizontal">
+
+        <include
+            android:id="@+id/trade_item_fdyk"
+            layout="@layout/item_trade"
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/trade_item_pcyk"
+            layout="@layout/item_trade"
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/trade_item_fxl"
+            layout="@layout/item_trade"
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20pt"
+        android:background="@color/color_line" />
+
+    <com.sskj.bfex.common.widget.MyTabLayout
+        android:id="@+id/slidingTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100pt"
+        app:tl_indicator_width="100pt"
+        app:tl_textBold="BOTH"
+        app:tl_textsize="25pt"
+        tl:tl_divider_color="#1A000000"
+        tl:tl_divider_padding="0pt"
+        tl:tl_divider_width="0dp"
+        tl:tl_indicator_color="@color/colorTextGreen"
+        tl:tl_indicator_height="5pt"
+        tl:tl_indicator_width_equal_title="false"
+        tl:tl_tab_padding="5pt"
+        tl:tl_tab_space_equal="true"
+        tl:tl_textSelectColor="@color/tab_selectColor"
+        tl:tl_textUnselectColor="@color/tab_unSelectColor"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/trade_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

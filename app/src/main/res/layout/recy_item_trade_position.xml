@@ -1,0 +1,42 @@
+<com.shizhefei.view.hvscrollview.HVScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/hvScrollView"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingEnd="30pt"
+    android:paddingStart="30pt"
+    app:scrollOrientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <include
+            android:id="@+id/include_bz"
+
+            layout="@layout/trade_position_item" />
+
+        <include
+            android:id="@+id/include_lx"
+            layout="@layout/trade_position_item" />
+
+        <include
+            android:id="@+id/include_ccl"
+            layout="@layout/trade_position_item" />
+
+        <include
+            android:id="@+id/include_bzj"
+            layout="@layout/trade_position_item" />
+
+        <include
+            android:id="@+id/include_cbxj"
+            layout="@layout/trade_position_item" />
+
+        <include
+            android:id="@+id/include_fd"
+            layout="@layout/trade_position_item" />
+    </LinearLayout>
+</com.shizhefei.view.hvscrollview.HVScrollView>

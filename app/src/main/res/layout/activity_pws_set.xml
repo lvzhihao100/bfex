@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingEnd="60pt"
+            android:paddingStart="60pt">
+
+
+            <TextView
+                style="@style/BigTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="115pt"
+                android:gravity="center"
+                android:text="设置密码" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50pt"
+                android:layout_marginTop="10pt"
+                android:gravity="center"
+                android:text="@string/password_hint"
+                android:textColor="@color/colorHintTextShow"
+                android:textSize="22pt" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100pt"
+                android:layout_marginTop="70pt">
+
+                <EditText
+                    android:id="@+id/et_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="100pt"
+                    android:gravity="center_vertical"
+                    android:hint="请输入密码"
+                    android:singleLine="true"
+                    android:digits="@string/pwd_filter"
+                    android:inputType="textPassword"
+                    android:textSize="36pt"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_toggle_pwd"
+                    android:layout_width="80pt"
+                    android:layout_height="80pt"
+                    android:padding="20pt"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/unsee" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100pt"
+                android:layout_marginTop="50pt">
+
+                <EditText
+                    android:id="@+id/et_pwd_again"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:hint="请再次输入密码"
+                    android:singleLine="true"
+                    android:digits="@string/pwd_filter"
+                    android:inputType="textPassword"
+                    android:textSize="36pt" />
+
+                <ImageView
+                    android:id="@+id/iv_toggle_pwd_again"
+                    android:layout_width="80pt"
+                    android:layout_height="80pt"
+                    android:padding="20pt"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/unsee" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/et_invite_code"
+                android:layout_width="match_parent"
+                android:layout_height="100pt"
+                android:layout_marginTop="50pt"
+                android:gravity="center_vertical"
+                android:hint="邀请码（非必填）"
+                android:singleLine="true"
+                android:digits="@string/pwd_filter"
+                android:textSize="36pt" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80pt"
+                android:layout_marginTop="80pt"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="80pt"
+                    android:layout_height="80pt"
+                    android:layout_marginEnd="5pt"
+                    android:padding="20pt" />
+
+                <TextView
+                    android:id="@+id/tv_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="我同意" />
+
+                <TextView
+                    android:id="@+id/tv_contract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="《用户协议》"
+                    android:textColor="@color/colorTextGreen" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/bt_next_step"
+                android:layout_width="match_parent"
+                android:layout_height="90pt"
+                android:layout_marginTop="60pt"
+                android:background="@drawable/selector_login"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="注册"
+                android:textColor="@android:color/white"
+                android:textSize="35pt" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingEnd="30pt"
+        android:paddingStart="30pt">
+
+        <TextView
+            style="@style/BigTitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70pt"
+            android:gravity="center"
+            android:text="USTD钱包地址管理" />
+
+        <TextView
+            style="@style/NormalTitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70pt"
+            android:text="地址" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100pt"
+            android:layout_marginTop="20pt">
+
+            <EditText
+                android:id="@+id/et_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="输入或粘贴地址"
+                android:textSize="36pt" />
+
+            <ImageView
+                android:id="@+id/iv_address"
+                android:layout_width="50pt"
+                android:layout_height="50pt"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_address" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/NormalTitleTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70pt"
+            android:text="备注" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100pt"
+            android:layout_marginTop="57pt">
+
+            <EditText
+                android:id="@+id/et_remark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="HT-Address 1"
+                android:textSize="36pt" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_submit"
+            style="@style/ClickTextStyle"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="300pt"
+            android:background="@drawable/selector_login"
+            android:enabled="false"
+            android:text="确定" />
+
+    </LinearLayout>
+</LinearLayout>

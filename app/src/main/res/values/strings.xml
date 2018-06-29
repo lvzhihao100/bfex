@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">BFEX</string>
+    <string name="user_id">UID:%1$s</string>
+    <string name="personal_mobile">手机号：%1$s</string>
+    <string name="personal_trabcaction_id">交易ID：%1$s</string>
+    <string name="personal_name">姓名：%1$s</string>
+    <string name="personal_ident">身份证号：%1$s</string>
+    <string name="highText">高</string>
+    <string name="lowText">低</string>
+
+    <string name="minute">分时</string>
+    <string name="minute_15">15分钟</string>
+    <string name="hour">1小时</string>
+    <string name="hour_4">4小时</string>
+    <string name="day">1天</string>
+
+    <string name="real_name">姓名</string>
+    <string name="ident_number">身份证号</string>
+    <string name="camera_permission_required">本功能需要相机权限！</string>
+    <string name="phone">手机号:%1$s</string>
+    <string name="risk_tatio">爆仓率</string>
+    <string name="approximate">≈ %1$sCNY</string>
+    <string name="balabce">可用%1$s</string>
+    <string name="list_data"></string>
+
+    <string name="buy">买入</string>
+    <string name="sale">卖出</string>
+    <string name="loading">加载中</string>
+    <string name="transaction_order_item_price">价格</string>
+    <string name="transaction_order_item_count">数量</string>
+    <string name="transaction_order_item_final_price">成交价</string>
+    <string name="transaction_count">交易额:</string>
+    <string name="wait_ident">等待审核</string>
+    <string name="transaction_input_btn">买入(做多)</string>
+    <string name="transaction_output_btn">卖出(做空)</string>
+    <string name="transaction_input">买入  %1$s</string>
+    <string name="transaction_output">卖出  %1$s</string>
+    <string name="qiangchou">抢筹</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="pwd_filter">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="identityDigst">0123456789Xx</string>
+
+    <string name="trade_revoke">撤单</string>
+    <!--<string name="trade_price">价格 %1$s</string>-->
+    <string name="trade_count">数量 %1$s</string>
+    <string name="trade_cash_deposit">保证金 %1$s</string>
+    <string name="trade_service_charge">手续费 %1$s</string>
+    <string name="trade_inventory">持仓量 %1$s</string>
+    <string name="trade_real_time_price">当前价 %1$s</string>
+    <string name="trade_price">总金额</string>
+
+    <string name="header_run_down">盘口</string>
+
+    <string name="welcome">欢迎来到BFEX</string>
+
+    <string name="login_text">登录BFEX</string>
+    <string name="password_hint">8到20个字符，不可以是纯数字或纯字母</string>
+
+    <array name="priceType">
+        <item>限价</item>
+        <item>市价</item>
+    </array>
+
+    <array name="orderType">
+        <item>全部</item>
+        <item>买入</item>
+        <item>卖出</item>
+    </array>
+    <array name="orderStatus">
+        <item>全部</item>
+        <item>委托</item>
+        <item>交易中</item>
+        <item>成交 </item>
+        <item>已撤销</item>
+    </array>
+</resources>

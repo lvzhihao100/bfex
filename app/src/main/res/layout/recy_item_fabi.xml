@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="298pt"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingBottom="29pt"
+    android:paddingEnd="32pt"
+    android:paddingStart="31pt"
+    android:paddingTop="29pt">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50pt">
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="50pt"
+            android:layout_height="50pt"
+            android:layout_marginEnd="15pt"
+            android:src="@mipmap/icon_logout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/iv_photo"
+            android:gravity="center_vertical"
+            android:textColor="@color/fabi_item_name_color"
+            android:textSize="32pt"
+            android:text="唐僧" />
+
+        <TextView
+            android:id="@+id/tv_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/fabi_item_text_color"
+            android:textSize="24pt"
+            android:text="94%" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="3pt"
+            android:layout_height="20pt"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10pt"
+            android:layout_marginStart="10pt"
+            android:layout_toStartOf="@id/tv_percent"
+            android:background="#86959C" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/view_line"
+            android:gravity="center_vertical"
+            android:textColor="@color/fabi_item_text_color"
+            android:textSize="24pt"
+            android:text="94%" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="500pt"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="match_parent"
+                android:layout_height="50pt"
+                android:gravity="center_vertical"
+                android:text="数量 45.012457 ETH"
+                android:textColor="@color/fabi_item_text_color"
+                android:textSize="28pt" />
+
+            <TextView
+                android:id="@+id/tv_limit_money"
+                android:layout_width="match_parent"
+                android:layout_height="35pt"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:text="限额 ￥1,000.00-￥42,000.00"
+                android:textColor="@color/fabi_item_text_color"
+                android:textSize="28pt" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_wechat"
+                    android:layout_width="36pt"
+                    android:layout_height="36pt"
+                    android:layout_marginEnd="10pt"
+                    android:src="@mipmap/icon_logout" />
+
+                <ImageView
+                    android:id="@+id/iv_bank"
+                    android:layout_width="36pt"
+                    android:layout_height="36pt"
+                    android:layout_marginEnd="10pt"
+                    android:src="@mipmap/icon_logout" />
+
+                <ImageView
+                    android:id="@+id/iv_alipay"
+                    android:layout_width="36pt"
+                    android:layout_height="36pt"
+                    android:layout_marginEnd="10pt"
+                    android:src="@mipmap/icon_logout" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50pt"
+                android:gravity="center_vertical|right"
+                android:text="单价"
+                android:textColor="@color/fabi_item_text_color"
+                android:textSize="25pt" />
+
+            <TextView
+                android:id="@+id/tv_china_money"
+                android:layout_width="match_parent"
+                android:layout_height="50pt"
+                android:gravity="center_vertical|right"
+                android:text="￥2,956.00"
+                android:textColor="@color/fabi_select_tab_text_color"
+                android:textSize="36pt" />
+
+            <Button
+                android:id="@+id/bt_sale"
+                android:layout_width="190pt"
+                android:layout_height="70pt"
+                android:background="@color/fabi_select_tab_text_color"
+                android:text="出售"
+                android:textColor="@color/white"
+                android:textSize="30pt"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

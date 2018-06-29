@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#66000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingEnd="30pt"
+        android:paddingStart="30pt">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80pt"
+            android:gravity="center_vertical"
+            android:text="全部支付方式"
+            android:textColor="@color/fabi_bottom_sheet_green_color"
+            android:textSize="28pt" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80pt"
+            android:gravity="center_vertical"
+            android:text="微信"
+            android:textColor="#7C9BB7"
+            android:textSize="28pt" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80pt"
+            android:gravity="center_vertical"
+            android:text="支付宝"
+            android:textColor="#7C9BB7"
+            android:textSize="28pt" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80pt"
+            android:gravity="center_vertical"
+            android:text="银行卡"
+            android:textColor="#7C9BB7"
+            android:textSize="28pt" />
+    </LinearLayout>
+
+</LinearLayout>

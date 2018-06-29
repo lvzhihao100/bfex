@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#999999</color>
+    <color name="colorPrimaryDark">#999999</color>
+    <color name="colorAccent">#999999</color>
+    <color name="colorDarkGreen">#29455E</color>
+    <color name="colorTextGreen">#6D96D6</color>
+    <color name="colorButtonDisable">#D0D9DE</color>
+    <color name="colorHintTextShow">#7A93A4</color>
+    <color name="colorHintTextEdit">#C2C7C8</color>
+    <color name="colorTradeBg">#142031</color>
+    <color name="colorTradeLine">#071823</color>
+
+    <color name="colorHintLine">#D6D6D6</color>
+    <color name="colorBaseTextColor">#3A5568</color>
+    <color name="colorRechargeBlockBg">#F4F9FA</color>
+    <color name="text_color">#21445d</color>
+    <color name="text_color_10">#103047</color>
+    <color name="text_color_7c">#7C9BB6</color>
+    <color name="white">#ffffff</color>
+    <color name="white_fd">#FDFDFD</color>
+    <color name="trantracent">#00000000</color>
+    <color name="red_eb">#eb7147</color>
+    <color name="gray_e7">#e7eced</color>
+    <color name="gray_cf">#cfdade</color>
+    <color name="gray_c9">#c9c9c9</color>
+    <color name="gray_ca">#CAD1D3</color>
+    <color name="gray_c6">#C6CCD1</color>
+    <color name="blue_5d">#5d90de</color>
+
+    <color name="new_text_yellow">#cfa973</color>
+
+    <color name="blue_75">#7582A2</color>
+    <color name="blue_87">#8791AD</color>
+    <color name="black_22">#223D45</color>
+
+
+
+    <color name="activity_bg">#131e30</color>
+    <color name="tabNormalColor">#7d95b4</color>
+    <color name="market_up">#e86d43</color>
+    <color name="market_down">#03c088</color>
+    <color name="green_67">#67C23A</color>
+    <color name="yellow">#edea3a</color>
+    <color name="ma5">#f2ee0d</color>
+    <color name="ma10">#24d0f7</color>
+    <color name="ma20">#ed2b3e</color>
+    <color name="textColorNormal">#656565</color>
+    <color name="blackTransparent">#cc000000</color>
+    <color name="qiangchou">#03c088</color>
+    <color name="qiangchouend">#d1d8de</color>
+    <color name="color_blue">#4182ef</color>
+
+
+    <color name="tab_selectColor">#4B6693</color>
+    <color name="tab_unSelectColor">#3A5568</color>
+    <color name="color_line">#f2f2f2</color>
+
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="title_bar_color">#171717</color>
+    <!--实名开户字体颜色-->
+    <color name="realName">#FFAA00</color>
+    <!-- 灰色 -->
+    <color name="grayHint">#bdbebf</color>
+    <color name="header_color">#1D1D1D</color>
+    <color name="fabi_unselect_tab_text_color">#7C9BB7</color>
+    <color name="fabi_select_tab_text_color">#679BEF</color>
+    <color name="fabi_item_name_color">#11314A</color>
+    <color name="fabi_item_text_color">#86959C</color>
+    <color name="fabi_bottom_sheet_title_color">#11314A</color>
+    <color name="fabi_bottom_sheet_green_color">#679BEF</color>
+    <color name="fabi_bottom_sheet_hint_color">#B4BCC1</color>
+    <color name="fabi_bottom_sheet_gray_color">#86959C</color>
+
+
+</resources>

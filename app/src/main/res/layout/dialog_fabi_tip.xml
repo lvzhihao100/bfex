@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="647pt"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50pt"
+        android:gravity="center_horizontal"
+        android:text="温馨提示"
+        android:textColor="#10324E"
+        android:textSize="32pt" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40pt"
+        android:gravity="center_horizontal"
+        android:text="您需要先申请成为商家才可发布广告"
+        android:textColor="#86959C"
+
+        android:textSize="24pt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100pt"
+        android:layout_marginTop="46pt"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/fabi_bottom_sheet_gray_color"
+            android:textSize="30pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_apply"
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/fabi_bottom_sheet_green_color"
+            android:gravity="center"
+            android:text="申请"
+            android:textColor="@color/white"
+            android:textSize="30pt"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

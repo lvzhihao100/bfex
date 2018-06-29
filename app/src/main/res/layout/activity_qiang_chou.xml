@@ -1,0 +1,248 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/qc_tab"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:left_img="@mipmap/icon_b_nor"
+        app:title="ETC_USDT" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="30pt">
+
+                <TextView
+                    android:id="@+id/qc_avaiable_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="0.0000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qc_avaiable_sum"
+                    android:layout_marginBottom="30pt"
+                    android:text="可用USDT"
+                    android:textSize="@dimen/txt_10" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20pt"
+                android:background="@color/colorButtonDisable" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="30pt"
+                android:paddingTop="50pt">
+
+                <RadioButton
+                    android:id="@+id/price_type_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_indicatrix_blue"
+                    android:button="@null"
+                    android:checked="true"
+                    android:padding="30pt"
+                    android:text="抢筹"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/txt_18"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50"
+                android:layout_marginLeft="30pt"
+                android:layout_marginRight="30pt"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@drawable/shape_frame_gray"
+                android:orientation="horizontal"
+                android:padding="@dimen/space_2">
+
+                <TextView
+                    android:id="@+id/transction_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/space_10"
+                    android:text="价格（USDT）" />
+
+                <TextView
+                    android:id="@+id/qc_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:hint="价格"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/space_10" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50"
+                android:layout_marginLeft="30pt"
+                android:layout_marginRight="30pt"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@drawable/shape_frame_gray"
+                android:padding="@dimen/space_2">
+
+                <TextView
+                    android:id="@+id/transction_count_editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/space_10"
+                    android:text="数量" />
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/qc_count_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:focusedByDefault="false"
+                    android:gravity="center_vertical|left"
+                    android:inputType="numberSigned"
+                    android:paddingLeft="@dimen/space_10" />
+
+            </LinearLayout>
+
+
+            <com.sskj.bfex.v.widget.mychart.BubbleSeekBar
+                android:id="@+id/qc_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30pt"
+                android:layout_marginRight="30pt"
+                android:layout_marginTop="@dimen/space_20"
+                app:bsb_bubble_color="@color/red_eb"
+                app:bsb_bubble_text_color="@color/gray_e7"
+                app:bsb_hide_bubble="true"
+                app:bsb_max="1000.0"
+                app:bsb_min="0"
+                app:bsb_progress="0"
+                app:bsb_second_track_color="@color/red_eb"
+                app:bsb_section_count="1"
+                app:bsb_section_text_position="bottom_sides"
+                app:bsb_show_progress_in_float="true"
+                app:bsb_show_section_mark="true"
+                app:bsb_show_section_text="true"
+                app:bsb_show_thumb_text="false"
+                app:bsb_track_color="@color/gray_e7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_50"
+                android:layout_marginLeft="30pt"
+                android:layout_marginRight="30pt"
+                android:layout_marginTop="@dimen/space_10"
+                android:padding="@dimen/space_2">
+
+                <TextView
+                    android:id="@+id/transction_count_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/space_10"
+                    android:text="金额" />
+
+                <TextView
+                    android:id="@+id/qc_total_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/space_10"
+                    android:text="1" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/qc_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30pt"
+                android:layout_marginLeft="120pt"
+                android:layout_marginRight="120pt"
+                android:layout_marginTop="30pt"
+                android:background="@drawable/shape_rectangle_green_r15"
+                android:gravity="center"
+                android:padding="@dimen/space_10"
+                android:text="@string/qiangchou"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_18" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20pt"
+                android:layout_marginTop="30pt"
+                android:background="@color/colorButtonDisable" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="30pt"
+                    android:text="抢筹明细"
+                    android:textSize="@dimen/txt_18"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/qc_history_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:drawableLeft="@mipmap/icon_bill"
+                    android:gravity="center"
+                    android:padding="30pt"
+                    android:text="全部" />
+            </FrameLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/qc_revcyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="30pt"
+    android:paddingEnd="30pt"
+    android:paddingStart="30pt"
+    android:paddingTop="30pt">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50pt">
+
+        <TextView
+            android:id="@+id/tv_lx"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="---"
+            android:textSize="28pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_bz"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20pt"
+            android:layout_toRightOf="@id/tv_lx"
+            android:gravity="center"
+            android:text="--"
+            android:textSize="22pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="---"
+            android:textSize="22pt"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15pt"
+                android:layout_weight="1"
+
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="委托价"
+                    android:textSize="@dimen/trade_text" />
+
+                <TextView
+                    android:id="@+id/tv_wtj"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="20pt"
+                    android:paddingRight="20pt"
+                    android:text="---"
+                    android:textSize="@dimen/trade_text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="委托量"
+                    android:textSize="@dimen/trade_text" />
+
+                <TextView
+                    android:id="@+id/tv_wtl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="20pt"
+                    android:paddingRight="20pt"
+                    android:text="---"
+                    android:textSize="@dimen/trade_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15pt"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总金额"
+                    android:textSize="@dimen/trade_text" />
+
+                <TextView
+                    android:id="@+id/tv_zje"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="20pt"
+                    android:paddingRight="20pt"
+                    android:text="---"
+                    android:textSize="@dimen/trade_text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手续费"
+                    android:textSize="@dimen/trade_text" />
+
+                <TextView
+                    android:id="@+id/tv_sxf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="20pt"
+                    android:paddingRight="20pt"
+                    android:text="---"
+                    android:textSize="@dimen/trade_text" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10pt"
+            android:background="@color/color_line"
+            android:paddingBottom="20pt"
+            android:paddingTop="20pt"></View>
+
+        <Button
+            android:id="@+id/trade_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="撤单" />
+    </LinearLayout>
+
+</LinearLayout>
+

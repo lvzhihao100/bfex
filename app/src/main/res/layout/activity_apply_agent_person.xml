@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bar_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190pt"
+        android:orientation="vertical"
+        android:paddingEnd="40pt"
+        android:paddingStart="40pt">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90pt"
+            android:layout_marginStart="112pt"
+            android:gravity="bottom"
+            android:text="机构号"
+            android:textColor="@color/white"
+            android:textSize="36pt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98pt"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingEnd="20pt"
+            android:paddingStart="20pt">
+
+            <ImageView
+                android:layout_width="60pt"
+                android:layout_height="60pt"
+                android:src="@mipmap/jigouhao" />
+
+            <View
+                android:layout_width="2pt"
+                android:layout_height="70pt"
+                android:layout_marginEnd="15pt"
+                android:layout_marginStart="15pt"
+                android:background="@color/realName" />
+
+
+            <TextView
+                android:id="@+id/tv_jigou"
+                android:layout_width="match_parent"
+                android:layout_height="70pt"
+                android:background="@null"
+                android:inputType="number"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textColorHint="@color/grayHint"
+                android:textColor="@color/white"
+                android:textSize="36pt"
+               />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2pt"
+            android:background="@color/grayHint" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190pt"
+        android:orientation="vertical"
+        android:paddingEnd="40pt"
+        android:paddingStart="40pt">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90pt"
+            android:layout_marginStart="112pt"
+            android:gravity="bottom"
+            android:text="姓名"
+            android:textColor="@color/white"
+            android:textSize="36pt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98pt"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingEnd="20pt"
+            android:paddingStart="20pt">
+
+            <ImageView
+                android:layout_width="60pt"
+                android:layout_height="60pt"
+                android:src="@mipmap/jigouhao" />
+
+            <View
+                android:layout_width="2pt"
+                android:layout_height="70pt"
+                android:layout_marginEnd="15pt"
+                android:layout_marginStart="15pt"
+                android:background="@color/realName" />
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="70pt"
+                android:background="@null"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textColorHint="@color/grayHint"
+                android:textColor="@color/white"
+                android:textSize="36pt"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2pt"
+            android:background="@color/grayHint" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270pt"
+        android:orientation="vertical"
+        android:paddingBottom="80pt"
+        android:paddingEnd="40pt"
+        android:paddingStart="40pt">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90pt"
+            android:layout_marginStart="112pt"
+            android:gravity="bottom"
+            android:text="验证码"
+            android:textColor="@color/white"
+            android:textSize="36pt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98pt"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingEnd="20pt"
+            android:paddingStart="20pt">
+
+            <ImageView
+                android:layout_width="60pt"
+                android:layout_height="60pt"
+                android:src="@mipmap/yzm" />
+
+            <View
+                android:layout_width="2pt"
+                android:layout_height="70pt"
+                android:layout_marginEnd="15pt"
+                android:layout_marginStart="15pt"
+                android:background="@color/realName" />
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="0pt"
+                android:layout_height="70pt"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textColorHint="@color/grayHint"
+                android:hint="请输入验证码"
+                android:textColor="@color/white"
+                android:textSize="36pt"
+                 />
+
+            <View
+                android:layout_width="2pt"
+                android:layout_height="70pt"
+                android:layout_marginEnd="15pt"
+                android:layout_marginStart="15pt"
+                android:background="@color/realName" />
+
+            <TextView
+                android:id="@+id/tv_code_get"
+                android:layout_width="150pt"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="获取验证码"
+                android:textColor="@color/realName"
+                android:textSize="30pt" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2pt"
+            android:background="@color/grayHint" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="672pt"
+        android:layout_height="95pt"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100pt"
+        android:background="@drawable/button"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="40pt" />
+
+
+</LinearLayout>

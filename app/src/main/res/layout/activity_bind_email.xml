@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.sskj.bfex.v.activity.BindEmailActivity">
+
+    <include layout="@layout/layout_title"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingBottom="@dimen/space_20"-->
+        <!--android:paddingLeft="30pt"-->
+        <!--android:paddingTop="@dimen/space_20"-->
+        <!--android:text="绑定邮箱"-->
+        <!--android:textColor="@color/text_color"-->
+        <!--android:textSize="@dimen/txt_26" />-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30pt"
+        android:paddingRight="30pt">
+
+        <EditText
+            android:id="@+id/bind_email_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_50"
+            android:hint="请输入新邮箱"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+
+        <!--<CheckBox-->
+        <!--android:id="@+id/bind_email_switch_show_or_hide"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center|right"-->
+        <!--android:button="@drawable/selector_show_or_hide"-->
+        <!--android:paddingRight="@dimen/space_2" />-->
+    </FrameLayout>
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="50pt"-->
+    <!--android:paddingLeft="@dimen/space_20"-->
+    <!--android:paddingRight="@dimen/space_20">-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/bind_code_edittext"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/space_50"-->
+    <!--android:background="@drawable/selector_indicatrix_red"-->
+    <!--android:hint="请输入邮箱验证码"-->
+    <!--android:inputType="number"-->
+    <!--android:maxLines="1" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/bt_send_email_code"-->
+    <!--android:layout_width="225pt"-->
+    <!--android:layout_height="80pt"-->
+    <!--android:layout_gravity="end|center_vertical"-->
+    <!--android:background="@drawable/selector_login"-->
+    <!--android:gravity="center"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="36pt" />-->
+    <!--</FrameLayout>-->
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/bind_email_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="130pt"
+        android:layout_marginLeft="30pt"
+        android:layout_marginRight="30pt"
+        android:background="@drawable/selector_login"
+        android:enabled="false"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="36pt" />
+</LinearLayout>

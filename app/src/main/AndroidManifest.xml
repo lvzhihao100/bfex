@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sskj.bfex">
+
+    <!-- 联网权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- WIFI状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 读取网络信息状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- SDcard权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 闪光灯 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:name="com.sskj.bfex.MyAppLication"
+        android:allowBackup="true"
+        android:icon ="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeNoAction">
+        <meta-data android:name="android.max_aspect"
+            android:value="ratio_float"/>
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="false" />
+
+        <activity
+            android:name="com.sskj.bfex.v.activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.CodeCheckDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <!-- android:launchMode="singleTask" -->
+        <activity
+            android:name="com.sskj.bfex.v.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.CodeCheckActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.PwdSetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.PwdForgetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.PwdResetActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.PersonalActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.SecurityCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.BindEmailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.CashAddressListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.CameraActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.CashAddressAddActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.VerifyIdentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.CommonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.PayPwdSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.MarketActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.RechargeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.AuthSuccessActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.AboutUsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.RechargeRecordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.WithdrawRecordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.WithdrawActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.MobileCheckActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.PayPwdInputActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.TradeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.RaiseInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.InviteFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.RaiseListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.WebViewActivity"
+            android:label="@string/title_activity_web_view"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoAction" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.QiangChouActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.AssetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.sskj.bfex.v.activity.EntrustActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.sskj.bfex.v.activity.EntrustHistoryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.sskj.bfex.v.activity.QuickMarkActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".v.activity.AgentPersonActivity" />
+        <activity android:name=".v.activity.SpreadActivity" />
+        <activity android:name=".v.activity.ApplyAgentPersonActivity" />
+        <activity android:name=".v.activity.CommissionDetailActivity" />
+        <activity android:name=".v.activity.CustomActivity" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.sskj.bfex.v.activity.EntrustActivity">
+
+    <com.sskj.bfex.common.widget.ToolBarLayout
+        android:id="@+id/entrust_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        app:left_img="@mipmap/icon_back"
+        app:right_img="@mipmap/icon_quersion"
+        app:right_text="历史" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/horizontal_margin"
+        android:text="当前委托"
+        android:textSize="35sp" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/entrust_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/entrust_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

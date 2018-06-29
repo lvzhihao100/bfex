@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/layout_title" />
+
+
+    <FrameLayout
+        android:id="@+id/security_mobile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/space_10"
+            android:gravity="center|left"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingLeft="30pt"
+            android:paddingTop="@dimen/space_10"
+            android:text="手机"
+            android:textSize="30pt" />
+
+        <TextView
+            android:id="@+id/security_mobile_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:drawablePadding="@dimen/space_10"
+            android:drawableRight="@mipmap/icon_right_arrows"
+            android:gravity="center|left"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingRight="30pt"
+            android:paddingTop="@dimen/space_10"
+            android:text="已开启"
+            android:textSize="30pt" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="#f3f3f3" />
+
+    <FrameLayout
+        android:id="@+id/security_email_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="@dimen/space_10"
+            android:gravity="center|left"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingLeft="30pt"
+            android:paddingTop="@dimen/space_10"
+            android:text="邮箱"
+            android:textSize="30pt" />
+
+        <TextView
+            android:id="@+id/security_email_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:drawablePadding="@dimen/space_10"
+            android:drawableRight="@mipmap/icon_right_arrows"
+            android:gravity="center|left"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingRight="30pt"
+            android:paddingTop="@dimen/space_10"
+            android:text="未绑定"
+            android:textSize="30pt" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="#f3f3f3" />
+
+    <FrameLayout
+        android:id="@+id/security_login_paw_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/space_10"
+            android:gravity="center|left"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingLeft="30pt"
+            android:paddingTop="@dimen/space_10"
+            android:text="登录密码"
+            android:textSize="30pt" />
+
+        <TextView
+            android:id="@+id/security_login_paw_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:drawablePadding="@dimen/space_10"
+            android:drawableRight="@mipmap/icon_right_arrows"
+            android:gravity="center|left"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingRight="30pt"
+            android:paddingTop="@dimen/space_10"
+            android:text="已设置"
+            android:textSize="30pt" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="#f3f3f3" />
+
+    <FrameLayout
+        android:id="@+id/security_pay_psw_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/space_10"
+            android:gravity="center|left"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingLeft="30pt"
+            android:paddingTop="@dimen/space_10"
+            android:text="支付密码"
+            android:textSize="30pt" />
+
+        <TextView
+            android:id="@+id/security_pay_psw_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:drawablePadding="@dimen/space_10"
+            android:drawableRight="@mipmap/icon_right_arrows"
+            android:gravity="center|left"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingRight="30pt"
+            android:paddingTop="@dimen/space_10"
+            android:text="未设置"
+            android:textSize="30pt" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="#f3f3f3" />
+
+    <FrameLayout
+        android:id="@+id/security_verify_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/space_10"
+            android:gravity="center|left"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingLeft="30pt"
+            android:paddingTop="@dimen/space_10"
+            android:text="实名认证"
+            android:textSize="30pt" />
+
+        <TextView
+            android:id="@+id/security_verify_checked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:drawablePadding="@dimen/space_10"
+            android:drawableRight="@mipmap/icon_right_arrows"
+            android:gravity="center|left"
+            android:paddingBottom="@dimen/space_10"
+            android:paddingRight="30pt"
+            android:paddingTop="@dimen/space_10"
+            android:text="未认证"
+            android:textSize="30pt" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:background="#f3f3f3" />
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sskj.bfex.v.activity.RaiseInfoActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingEnd="26pt"
+        android:paddingStart="26pt">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="30pt"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="120pt"
+                android:gravity="center_vertical|left"
+                android:text="抢筹币种"
+                android:textSize="26pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="120pt"
+                android:gravity="center_vertical|left"
+                android:text="可抢筹数量"
+                android:textSize="26pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="120pt"
+                android:gravity="center_vertical|left"
+                android:text="抢筹价格"
+                android:textSize="26pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="120pt"
+                android:gravity="center_vertical|left"
+                android:text="抢筹资金"
+                android:textSize="26pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="120pt"
+                android:gravity="center_vertical|left"
+                android:text="抢筹时间"
+                android:textSize="26pt" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_raise_coin_type"
+                android:layout_width="wrap_content"
+                android:layout_height="120pt"
+                android:gravity="center_vertical|left"
+                android:text="抢筹币种"
+                android:textSize="26pt" />
+
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="120pt"
+                android:gravity="center_vertical|left"
+                android:text="可抢筹数量"
+                android:textSize="26pt" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="120pt"
+                android:gravity="center_vertical|left"
+                android:text="抢筹价格"
+                android:textSize="26pt" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="120pt"
+                android:gravity="center_vertical|left"
+                android:text="抢筹资金"
+                android:textSize="26pt" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="120pt"
+                android:gravity="center_vertical|left"
+                android:text="抢筹时间"
+                android:textSize="26pt" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

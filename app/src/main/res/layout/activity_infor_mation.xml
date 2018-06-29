@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/information_back"
+            android:layout_width="@dimen/space_50"
+            android:layout_height="@dimen/space_46"
+            android:src="@mipmap/icon_back"
+            android:padding="@dimen/space_12"
+            android:layout_gravity="center_vertical"/>
+
+        <com.sskj.bfex.common.widget.HeyTabLayout
+            android:id="@+id/asset_manage_tablayout"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="?android:actionBarSize"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@color/trantracent"
+            app:tabSelectedTextColor="@color/text_color_10"
+            app:tabTextAppearance="@style/NormalTitleTextStyle">
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="头条"/>
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公告"/>
+        </com.sskj.bfex.common.widget.HeyTabLayout>
+
+        <View
+            android:layout_width="@dimen/space_1"
+            android:layout_height="match_parent"
+            android:background="@color/gray_c6"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_20"
+            android:layout_marginBottom="@dimen/space_20"/>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_line"/>
+
+    <FrameLayout
+        android:id="@+id/info_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

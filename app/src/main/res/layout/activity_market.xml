@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/marketToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:titleTextColor="@color/white"
+        android:background="@color/activity_bg"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        android:layout_gravity="top"
+        android:theme="@style/toolBar"
+        >
+    </android.support.v7.widget.Toolbar>
+<android.support.v4.widget.NestedScrollView
+    android:id="@+id/market_scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:id="@+id/market_info"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingTop="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginLeft="@dimen/horizontal_margin"
+            android:layout_marginRight="@dimen/horizontal_margin">
+
+            <TextView
+                android:id="@+id/priceNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="0000"
+                android:textColor="#09b07d"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/changeRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/priceNow"
+                android:text="123"
+                android:layout_marginTop="10dp"
+                android:textColor="#09b07d"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/highText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@id/highPrice"
+                android:layout_marginTop="10dp"
+                android:text="@string/highText"
+                android:textColor="@color/tabNormalColor" />
+
+            <TextView
+                android:id="@+id/highPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="0000"
+                android:maxLines="1"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/lowText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/highText"
+                android:layout_marginRight="30dp"
+                android:layout_alignLeft="@id/highText"
+                android:layout_toLeftOf="@id/lowPrice"
+                android:layout_marginTop="10dp"
+                android:text="@string/lowText"
+                android:textColor="@color/tabNormalColor" />
+
+            <TextView
+                android:id="@+id/lowPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/highPrice"
+                android:layout_marginTop="10dp"
+                android:text="0000"
+                android:maxLines="1"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#061623"
+        />
+        <android.support.design.widget.TabLayout
+            android:id="@+id/marketTab"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            app:tabSelectedTextColor="@color/tabNormalColor"
+            app:tabTextColor="@color/white"
+
+            >
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/minute" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/minute_15" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30分钟" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1小时" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日线" />
+        </android.support.design.widget.TabLayout>
+
+        <FrameLayout
+            android:id="@+id/marketFrame"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"></FrameLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#061623"
+            />
+        <android.support.design.widget.TabLayout
+            android:id="@+id/market_tab"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            app:tabIndicatorHeight="0dp"
+            app:tabTextColor="@color/tabNormalColor"
+            app:tabSelectedTextColor="@color/white"
+            >
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="成交"
+                />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="简介" />
+        </android.support.design.widget.TabLayout>
+
+        <FrameLayout
+            android:id="@+id/tradeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="300dp"
+            android:layout_marginBottom="50dp"
+            ></FrameLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="#222225"
+        android:paddingLeft="@dimen/horizontal_margin"
+        android:paddingRight="@dimen/horizontal_margin"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        >
+        <Button
+            android:id="@+id/marketBuy"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/buy"
+            android:textColor="@color/white"
+            android:background="@drawable/bt_bg_green"
+            android:layout_marginRight="5dp"
+            />
+        <Button
+            android:id="@+id/marketSale"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="@string/sale"
+            android:textColor="@color/white"
+            android:background="@drawable/bt_bg_red"
+            android:layout_marginLeft="5dp"
+            />
+    </LinearLayout>
+
+</FrameLayout>

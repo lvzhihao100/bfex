@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50pt"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/item_run_down"
+        android:layout_width="wrap_content"
+        android:layout_height="50pt"
+        android:textSize="@dimen/txt_12"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="right|center_vertical"
+        android:layout_height="50pt"
+        android:textSize="@dimen/txt_12"/>
+    <TextView
+        android:id="@+id/item_count"
+        android:layout_width="wrap_content"
+        android:layout_height="50pt"
+        android:textSize="@dimen/txt_12"
+        android:gravity="center_vertical"/>
+
+</LinearLayout>

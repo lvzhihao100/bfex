@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingEnd="50pt"
+    android:paddingStart="50pt">
+
+    <ImageView
+        android:id="@+id/iv_title"
+        android:layout_width="40pt"
+        android:layout_height="40pt"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="30pt"
+        android:layout_marginEnd="30pt"
+        android:layout_marginTop="30pt"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/iv_title"
+        android:gravity="center_vertical|left"
+        android:textSize="30pt"
+        tools:text="@tools:sample/first_names" />
+
+
+    <ImageView
+        android:id="@+id/iv_into"
+        android:layout_width="40pt"
+        android:layout_height="40pt"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20pt"
+        android:src="@mipmap/icon_right_arrows" />
+
+    <TextView
+        android:id="@+id/tv_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="35pt"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/iv_into"
+        android:background="@drawable/dot"
+        android:gravity="center"
+        android:paddingEnd="10pt"
+        android:visibility="invisible"
+        android:paddingStart="10pt"
+        android:textColor="@android:color/white"
+        android:textSize="26pt"
+        tools:text="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/space_50"
+        android:background="#f3f3f3" />
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sskj.bfex.v.fragment.TradeFragment">
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/tabNormalColor"
+            android:text="时间"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="方向"
+            android:gravity="center"
+            android:textColor="@color/tabNormalColor"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/tabNormalColor"
+            android:text="价格"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tabNormalColor"
+            android:text="数量"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/titleLayout"
+        android:id="@+id/trade_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

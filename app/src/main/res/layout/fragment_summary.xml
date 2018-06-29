@@ -1,0 +1,205 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/horizontal_margin"
+    android:paddingRight="@dimen/horizontal_margin"
+    tools:context="com.sskj.bfex.v.fragment.SummaryFragment">
+
+    <TextView
+        android:id="@+id/summary_name"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:text="---"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="发行时间"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/summary_crateTime"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="45dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical|right"
+            android:text="---"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="发行总量"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/summary_create_num"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="45dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical|right"
+            android:text="---"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="流通总量"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/summary_num"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="45dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical|right"
+            android:text="---"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="众筹价格"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/summary_price"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="45dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical|right"
+            android:text="---"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="白皮书"
+            android:textColor="@color/text_color" />
+
+        <TextView
+            android:id="@+id/summary_white_paper"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="45dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical|right"
+            android:text="---"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="官网"
+            android:textColor="@color/text_color" />
+        <TextView
+            android:id="@+id/summary_website"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="45dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical|right"
+            android:text="---"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="区块查询"
+            android:textColor="@color/text_color" />
+        <TextView
+            android:id="@+id/summary_block"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="45dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical|right"
+            android:text="---"
+            android:textColor="@color/white" />
+    </LinearLayout>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/summary_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        />
+</LinearLayout>

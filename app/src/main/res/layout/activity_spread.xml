@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bar_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="9pt"
+        android:background="#1d1d1d" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1pt" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="90pt"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:paddingEnd="30pt"
+        android:paddingStart="39pt">
+
+        <TextView
+            android:id="@+id/tv_invite_person"
+            style="@style/SingleLine28Size"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="28pt"
+            tools:text="邀请人：13245698784" />
+
+        <TextView
+            android:id="@+id/tv_invite_code"
+            style="@style/SingleLine28Size"
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|end"
+            tools:text="邀请码：132445" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@mipmap/tuiguang"
+        android:layout_height="match_parent">
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_content1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="117pt"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:text="推广客户"-->
+            <!--android:textColor="@color/new_text_yellow"-->
+            <!--android:textSize="42pt"-->
+            <!--android:textStyle="bold" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/tv_content1"-->
+            <!--android:layout_marginTop="31pt"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:text="推广客户获得海量佣金，每天赚不停"-->
+            <!--android:textColor="@color/new_text_yellow"-->
+            <!--android:textSize="24pt" />-->
+
+        <LinearLayout
+            android:id="@+id/ll_center"
+            android:layout_width="296pt"
+            android:layout_height="296pt"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/kuang"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/iv_qr_code"
+                android:layout_width="200pt"
+                android:layout_height="200pt"
+                android:layout_marginTop="30pt" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="175pt"
+            android:layout_height="101pt"
+
+            android:layout_below="@+id/ll_center"
+            android:layout_marginStart="-107pt"
+            android:layout_marginTop="-57pt"
+            android:layout_toEndOf="@id/ll_center"
+            android:src="@mipmap/jiantou" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_center"
+            android:layout_marginTop="30pt"
+            android:gravity="center_horizontal"
+            android:text="长按保存推广二维码"
+            android:textColor="@color/new_text_yellow"
+            android:textSize="28pt" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="560pt"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60pt"
+        android:layout_marginTop="40pt"
+        android:gravity="center"
+        android:text="请联系邮箱"
+        android:textSize="36pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="60pt"
+        android:layout_marginTop="30pt"
+        android:gravity="center"
+        android:text="请联系邮箱"
+        android:textSize="30pt"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3pt"
+        android:layout_marginTop="35pt"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80pt"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/colorHintTextShow"
+            android:textSize="36pt" />
+
+        <View
+            android:layout_width="3pt"
+            android:layout_height="match_parent"
+            android:background="#cccccc" />
+
+        <TextView
+            android:id="@+id/tv_copy"
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="复制"
+            android:textSize="36pt" />
+    </LinearLayout>
+</LinearLayout>

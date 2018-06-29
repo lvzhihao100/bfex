@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.sskj.bfex.v.activity.VerifyIdentActivity">
+
+
+    <include layout="@layout/layout_title"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_20"
+        android:text="@string/real_name" />
+
+    <EditText
+        android:id="@+id/verify_real_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@drawable/selector_indicatrix_red"
+        android:hint="@string/real_name"
+        android:imeOptions="actionDone"
+        android:layout_marginLeft="@dimen/space_20"
+        android:paddingRight="@dimen/space_10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_10"
+        android:text="@string/ident_number" />
+
+    <EditText
+        android:id="@+id/verify_ident_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@drawable/selector_indicatrix_red"
+        android:hint="@string/ident_number"
+        android:digits="@string/identityDigst"
+        android:inputType="textEmailAddress"
+        android:layout_marginLeft="@dimen/space_20"
+        android:paddingRight="@dimen/space_10" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_10"
+        android:text="手持身份证" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_20">
+
+        <ImageView
+            android:id="@+id/verify_photo_a"
+            android:layout_width="@dimen/space_100"
+            android:layout_height="@dimen/space_100"
+            android:background="@mipmap/icon_default"
+            android:scaleType="fitXY"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/verify_photo_b"
+            android:layout_width="@dimen/space_100"
+            android:layout_height="@dimen/space_100"
+            android:background="@mipmap/icon_default"
+            android:scaleType="fitXY"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/verify_photo_c"
+            android:layout_width="@dimen/space_100"
+            android:layout_height="@dimen/space_100"
+            android:background="@mipmap/icon_default"
+            android:scaleType="fitXY"/>
+
+  </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保证文字清晰可识别图片大小不要超过1MB建议使用QQ截图"
+        android:textSize="@dimen/txt_10"
+        android:layout_marginLeft="@dimen/space_20"/>
+
+    <Button
+        android:id="@+id/verify_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下一步"
+        android:enabled="false"
+        android:background="@drawable/selector_login"
+        android:textColor="@color/white"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"/>
+
+</LinearLayout>

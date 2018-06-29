@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:background="@color/white"
+    tools:context="com.sskj.bfex.v.fragment.TouTiaoFragment">
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    android:id="@+id/toutiao_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ <android.support.v7.widget.RecyclerView
+     android:id="@+id/toutiao_recycler_view"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+ </android.support.v7.widget.RecyclerView>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

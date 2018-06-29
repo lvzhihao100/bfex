@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sskj.bfex.v.activity.PersonalActivity">
+
+    <include layout="@layout/layout_title" />
+
+    <TextView
+        android:id="@+id/personal_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="30pt"
+        android:paddingTop="@dimen/space_10"
+        android:textColor="@color/text_color"
+        android:textSize="30pt"
+        tools:text="@string/personal_mobile" />
+
+    <TextView
+        android:id="@+id/personal_trabcaction_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="30pt"
+        android:paddingTop="@dimen/space_10"
+        android:textColor="@color/text_color"
+        android:textSize="30pt"
+        tools:text="@string/personal_trabcaction_id" />
+
+
+    <TextView
+        android:id="@+id/personal_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/space_10"
+        android:paddingLeft="30pt"
+        android:paddingTop="@dimen/space_10"
+        android:textColor="@color/text_color"
+        android:textSize="30pt"
+        tools:text="@string/personal_name" />
+
+    <TextView
+        android:id="@+id/personal_ident"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30pt"
+        android:paddingTop="@dimen/space_10"
+        android:textColor="@color/text_color"
+        android:textSize="30pt"
+        tools:text="@string/personal_ident" />
+
+</LinearLayout>

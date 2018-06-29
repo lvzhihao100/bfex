@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title_bar_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_title" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="9pt"
+        android:background="#1d1d1d" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1pt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="101pt"
+        android:background="@color/header_color"
+        android:orientation="horizontal"
+        android:paddingEnd="37pt"
+        android:paddingStart="30pt">
+
+        <TextView
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="名称"
+            android:textColor="@color/white"
+            android:textSize="28pt" />
+
+        <TextView
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="余额"
+            android:textColor="@color/white"
+            android:textSize="28pt" />
+
+        <TextView
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center_vertical|end"
+            android:text="注册时间"
+            android:textColor="@color/white"
+            android:textSize="28pt" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1pt" />
+
+    <com.shizhefei.view.coolrefreshview.CoolRefreshView
+        android:id="@+id/coolRefreshView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.shizhefei.view.coolrefreshview.CoolRefreshView>
+
+</LinearLayout>

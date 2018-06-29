@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/toutiao_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp"
+    android:paddingBottom="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/toutiao_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@id/toutiao_img"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        >
+        <TextView
+            android:id="@+id/toutiao_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:text="title"
+            android:maxLines="3"
+            android:ellipsize="end"
+            />
+        <TextView
+            android:id="@+id/toutiao_from"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="东方财富"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/toutiao_title"
+            />
+        <TextView
+            android:id="@+id/toutiao_time"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/toutiao_from"
+            android:text="2018-3-20"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/item_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30pt"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/space_10">
+
+        <TextView
+            android:id="@+id/item_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red_eb"
+            android:textSize="@dimen/txt_18"
+            android:textStyle="bold"
+            android:text="卖出" />
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold"
+            tools:text="ETC/USDT 23:00 01/18" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_title_layout"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/space_8"
+            android:paddingTop="@dimen/space_8">
+
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                tools:text="@string/transaction_order_item_price" />
+
+            <TextView
+                android:id="@+id/item_price_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8"
+                android:ellipsize="end"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/space_8"
+            android:paddingTop="@dimen/space_8">
+
+            <TextView
+                android:id="@+id/item_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                tools:text="@string/transaction_order_item_count" />
+
+            <TextView
+                android:id="@+id/item_count_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8"
+                android:ellipsize="end"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/space_8"
+            android:paddingTop="@dimen/space_8">
+
+            <TextView
+                android:id="@+id/item_final_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                tools:text="@string/transaction_order_item_final_price" />
+
+            <TextView
+                android:id="@+id/item_final_price_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8"
+                android:ellipsize="end"
+                android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

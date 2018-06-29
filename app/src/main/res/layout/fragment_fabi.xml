@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100pt"
+        android:background="@color/white">
+
+        <View
+            android:id="@+id/view_center_line"
+            android:layout_width="2pt"
+            android:layout_height="28pt"
+            android:layout_centerInParent="true"
+            android:background="#B4BCC1" />
+
+        <TextView
+            android:id="@+id/tv_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15pt"
+            android:layout_toLeftOf="@+id/view_center_line"
+            android:gravity="center"
+            android:text="购买"
+            android:textColor="@color/fabi_select_tab_text_color"
+            android:textSize="32pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_sell"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15pt"
+            android:layout_toRightOf="@+id/view_center_line"
+            android:gravity="center"
+            android:text="出售"
+            android:textColor="@color/fabi_unselect_tab_text_color"
+            android:textSize="32pt"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_right_end"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30pt"
+            android:src="@mipmap/icon_logout" />
+
+        <ImageView
+            android:id="@+id/iv_right_start"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30pt"
+            android:layout_toStartOf="@id/iv_right_end"
+            android:src="@mipmap/icon_logout" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1pt" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sskj.bfex.v.activity.CashAddressListActivity">
+
+
+    <include layout="@layout/layout_title"/>
+
+    <ListView
+        android:id="@+id/cash_address_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:layout_marginLeft="35pt"
+        android:layout_marginRight="35pt"/>
+
+    <Button
+        android:id="@+id/cash_address_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30pt"
+        android:layout_marginRight="30pt"
+        android:layout_marginBottom="130pt"
+        android:text="添加"
+        android:background="@color/blue_5d"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

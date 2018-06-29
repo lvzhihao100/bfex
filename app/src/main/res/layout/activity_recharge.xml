@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingEnd="30pt"
+        android:paddingStart="30pt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_qr_code"
+                android:layout_width="230pt"
+                android:layout_height="230pt"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="80pt" />
+
+            <TextView
+                android:id="@+id/tv_save_qr"
+                android:layout_marginTop="30pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="保存二维码至相册"
+                android:textColor="@color/colorTextGreen"
+                android:textSize="32pt" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="190pt"
+                android:layout_marginTop="60pt"
+                android:background="@color/colorRechargeBlockBg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40pt"
+                    android:gravity="center"
+                    android:textColor="@color/colorDarkGreen"
+                    android:textSize="32pt" />
+
+                <TextView
+                    android:id="@+id/tv_copy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10pt"
+                    android:gravity="center"
+                    android:text="复制地址"
+                    android:textColor="@color/colorTextGreen"
+                    android:textSize="32pt" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.2"
+                android:text="请勿向上述地址充值任何非USDT资产，否则资产将不可找回。您充值至上述地址后，需要整个网络节点的确认，6次网络确认后到账。"
+                android:textColor="#A5B2BA"
+                android:textSize="24pt" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50pt"
+                android:text="您可以在充值记录里查看充值状态！"
+                android:textColor="#A5A8AB"
+                android:textSize="24pt" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

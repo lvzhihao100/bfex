@@ -1,0 +1,60 @@
+ [{
+"pname": "btc_usdt",
+"mark": "BTC",
+"fxtime": "2008-11-01",
+"fxnum": "2100万",
+"fxall": "1673.82万",
+"fxprice": "--",
+"fxbook": "https://bitcoin.org/bitcoin.pdf",
+"fxweb": "https://bitcoin.org/en/",
+"fxqukuai": "https://blockchain.info/",
+"memo": "比特币（Bitcoin，简称BTC）是目前使用最为广泛的一种数字货币，它诞生于2009年1月3日，是一种点对点（P2P）传输的数字加密货币，总量2100万枚。比特币网络每10分钟释放出一定数量币，预计在2140年达到极限。比特币被投资者称为“数字黄金”。比特币依据特定算法，通过大量的计算产生，不依靠特定货币机构发行，其使用整个P2P网络中众多节点构成的分布式数据库来确认并记录所有的交易行为，并使用密码学设计确保货币流通各个环节安全性，可确保无法通过大量制造比特币来人为操控币值。基于密码学的设计可以使比特币只能被真实拥有者转移、支付及兑现。同样确保了货币所有权与流通交易的匿名性。"
+}, {
+"pname": "bch_usdt",
+"mark": "BCH",
+"fxtime": "2017/07/24",
+"fxnum": "2100万",
+"fxall": "1.6901万",
+"fxprice": "--",
+"fxbook": "http://blockdozer.com/insight/",
+"fxweb": "https://www.bitcoincash.org/",
+"fxqukuai": "https://blockchair.com/bitcoin-cash/blocks",
+"memo": "BCH是根据Bitcoin ABC方案产生的区块链资产。Bitcoin ABC方案为保持协议稳定简单，去除了Segwit功能，支持将区块大小提升至8M，是链上扩容的技术路线。Bitcoin ABC代码基于比特币协议的稳定版本进行了改进，其认为不包含Segwit将具有更大的稳定性、安全性、鲁棒性，是现行比特币协议和比特币系统的备份，自2017年8月1日21:16:14(GMT+8)，即区块高度478,558之后，BTC和BCH两条链已经正式分离成功。"
+
+}, {
+"pname": "eth_usdt",
+"mark": "ETH",
+"fxtime": "2014-07-24",
+"fxnum": "9631.15万",
+"fxall": "9631.15万",
+"fxprice": "$0.31",
+"fxbook": "https://github.com/ethereum/wiki/%5BEnglish...",
+"fxweb": "https://www.ethereum.org/",
+"fxqukuai": "https://wtherscan.io/",
+"memo": "以太坊（Ethereum）是下一代密码学账本，可以支持众多的高级功能，包括用户发行货币，智能协议，去中心化的交易和设立去中心化自治组织(DAOs)或去中心化自治公司（DACs）。以太坊并不是把每一单个类型的功能作为特性来特别支持，相反，以太坊包括一个内置的图灵完备的脚本语言，允许通过被称为“合同”的机制来为自己想实现的特性写代码。一个合同就像一个自动的代理，每当接收到一笔交易，合同就会运行特定的一段代码，这段代码能修改合同内部的数据存储或者发送交易。"
+
+}, {
+"pname": "etc_usdt",
+"mark": "ETC",
+"fxtime": "2015-11-01",
+"fxnum": "9833.66万",
+"fxall": "9833.66万",
+"fxprice": "--",
+"fxbook": "--",
+"fxweb": "https://ethereumclassic.github.io/",
+"fxqukuai": "http://gastracker.io/",
+"memo": "ETC（Ethereum Classic）是以太坊在1,920,000个块后硬分叉出的分叉币种，功能和以太坊极为类似。ETC秉承去中心化理念，支持区块链保证的共识机制。ETC坚信，区块链一旦开始运行，它的发展方向就不被任何中心团队所左右，而是按照参与整个网络人员的共识和全网算力的共识所决定。"
+}, {
+"pname": "ltc_usdt",
+"mark": "LTC",
+"fxtime": "2011-11-09",
+"fxnum": "8400万",
+"fxall": "5428.26万",
+"fxprice": "--",
+"fxbook": "--",
+"fxweb": "https://litecoin.com/",
+"fxqukuai": "http://explorer.litecoin.net/chain/Litecoin",
+"memo": "莱特币诞生于2011年11月9日，被称为是“数字白银”。莱特币在技术上和比特币具有相同的实现原理。它是第一个基于Scrypt算法的网络数字货币，与比特币相比，莱特币拥有更快的交易确认时间，更高的网络交易容量和效率。莱特币现在拥有完整的产业链，充分的流动性，足以证明其是成熟、安全、稳定的商用金融系统。"
+}
+
+]

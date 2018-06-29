@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="70pt"
+        android:layout_height="70pt"
+        android:layout_margin="30pt"
+        android:padding="10pt"
+        android:src="@mipmap/icon_back" />
+
+    <TextView
+        android:id="@+id/tv_goto_register"
+        android:layout_width="wrap_content"
+        android:layout_height="70pt"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="30pt"
+        android:gravity="center"
+        android:text="注册"
+        android:textColor="@color/colorTextGreen"
+        android:textSize="30pt"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingEnd="60pt"
+        android:paddingStart="60pt">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200pt"
+            android:gravity="center_vertical"
+            android:text="@string/login_text"
+            android:textColor="@color/colorDarkGreen"
+            android:textSize="60pt"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="100pt"
+            android:layout_marginTop="130pt"
+            android:hint="手机号码"
+            android:inputType="number"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textSize="36pt" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100pt"
+            android:layout_marginTop="30pt">
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="100pt"
+                android:digits="@string/pwd_filter"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="36pt" />
+
+            <ImageView
+                android:id="@+id/iv_toggle_pwd"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10pt"
+                android:src="@mipmap/unsee" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="90pt"
+            android:layout_marginTop="50pt"
+            android:background="@drawable/selector_login"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@android:color/white"
+            android:textSize="35pt" />
+
+        <TextView
+            android:id="@+id/tv_pwd_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="70pt"
+            android:layout_marginStart="10pt"
+            android:layout_marginTop="60pt"
+            android:gravity="center"
+            android:text="忘记密码"
+            android:textColor="@color/colorTextGreen"
+            android:textSize="26pt" />
+
+    </LinearLayout>
+</RelativeLayout>

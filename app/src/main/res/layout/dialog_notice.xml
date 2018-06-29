@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="最新公告"
+        android:textColor="@color/white"
+        android:background="@color/color_blue" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top"
+        android:maxLines="15"
+        android:minHeight="150dp"
+        android:gravity="center"
+        android:scrollbars="none"
+        />
+    <Button
+        android:id="@+id/dialog_know"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bt_bg_blue"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:text="(5)我知道了"
+        android:enabled="false"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/white" />
+
+</LinearLayout>

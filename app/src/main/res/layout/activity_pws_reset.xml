@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingEnd="20pt"
+    android:paddingStart="20pt">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="70pt"
+        android:layout_height="70pt"
+        android:layout_marginStart="30pt"
+        android:layout_marginTop="20pt"
+        android:padding="10pt"
+        android:src="@mipmap/icon_back" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingEnd="60pt"
+            android:paddingStart="60pt">
+
+            <TextView
+                style="@style/BigTitleTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="100pt"
+                android:layout_marginTop="100pt"
+                android:text="重新设置密码" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50pt"
+                android:layout_marginTop="10pt"
+                android:gravity="center"
+                android:text="@string/password_hint"
+                android:textColor="@color/colorHintTextShow"
+                android:textSize="22pt" />
+
+            <RelativeLayout
+
+                android:id="@+id/rl_origin"
+                android:layout_width="match_parent"
+                android:layout_height="100pt"
+                android:layout_marginTop="40pt">
+
+                <EditText
+                    android:id="@+id/et_pwd_origin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:hint="请输入原密码"
+                    android:inputType="textPassword"
+                    android:digits="@string/pwd_filter"
+                    android:paddingStart="10pt"
+                    android:textSize="30pt" />
+
+                <ImageView
+                    android:id="@+id/iv_toggle_pwd_origin"
+                    android:layout_width="40pt"
+                    android:layout_height="40pt"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/unsee" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100pt"
+                android:layout_marginTop="40pt">
+
+                <EditText
+                    android:id="@+id/et_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:hint="请输入密码"
+                    android:inputType="textPassword"
+                    android:digits="@string/pwd_filter"
+                    android:paddingStart="10pt"
+                    android:textSize="30pt" />
+
+                <ImageView
+                    android:id="@+id/iv_toggle_pwd"
+                    android:layout_width="40pt"
+                    android:layout_height="40pt"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/unsee" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100pt"
+                android:layout_marginTop="40pt">
+
+                <EditText
+                    android:id="@+id/et_pwd_again"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:hint="请再次输入密码"
+                    android:digits="@string/pwd_filter"
+                    android:inputType="textPassword"
+                    android:paddingStart="10pt"
+                    android:textSize="30pt" />
+
+                <ImageView
+                    android:id="@+id/iv_toggle_pwd_again"
+                    android:layout_width="40pt"
+                    android:layout_height="40pt"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/unsee" />
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/bt_next_step"
+                android:layout_width="match_parent"
+                android:layout_height="90pt"
+                android:layout_marginTop="100pt"
+                android:background="@drawable/selector_login"
+                android:enabled="false"
+                android:gravity="center"
+                android:text="重置密码"
+                android:textColor="@android:color/white"
+                android:textSize="35pt" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140pt"
+        android:paddingEnd="30pt"
+        android:paddingStart="30pt"
+        android:paddingTop="30pt">
+
+        <TextView
+            android:id="@+id/tv_sale_name"
+            android:layout_width="wrap_content"
+            android:layout_height="50pt"
+            android:text="出售ETH"
+            android:textColor="@color/fabi_bottom_sheet_title_color"
+            android:textSize="32pt" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50pt"
+            android:layout_below="@id/tv_sale_name"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="单价"
+                android:textColor="@color/fabi_bottom_sheet_title_color"
+                android:textSize="24pt" />
+
+            <TextView
+                android:id="@+id/tv_per_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="￥2,990.00"
+                android:textColor="@color/fabi_bottom_sheet_green_color"
+                android:textSize="24pt" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="65pt"
+            android:layout_height="65pt"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80pt"
+        android:orientation="horizontal"
+        android:paddingEnd="30pt"
+        android:paddingStart="30pt">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="30pt"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0pt"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="法币计价"
+                android:textColor="@color/fabi_bottom_sheet_hint_color"
+                android:textSize="28pt" />
+
+            <View
+                android:id="@+id/view_price"
+                android:layout_width="match_parent"
+                android:layout_height="2pt"
+                android:background="@color/fabi_bottom_sheet_green_color"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0pt"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="出售数量"
+                android:textColor="@color/fabi_bottom_sheet_green_color"
+                android:textSize="28pt" />
+
+            <View
+                android:id="@+id/view_num"
+                android:layout_width="match_parent"
+                android:layout_height="2pt"
+                android:background="@color/fabi_bottom_sheet_green_color" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_price"
+        android:layout_width="match_parent"
+        android:layout_height="100pt"
+        android:background="@drawable/fabi_bottom_sheet_edit_shape"
+        android:orientation="horizontal"
+        android:paddingEnd="30pt"
+        android:paddingStart="30pt">
+
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="450pt"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:padding="15pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="ETH"
+            android:textColor="@color/fabi_bottom_sheet_title_color"
+            android:textSize="28pt" />
+
+        <View
+            android:layout_width="2pt"
+            android:layout_height="26pt"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="15pt"
+            android:layout_marginStart="15pt"
+            android:background="#eeeeee" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="全部出售"
+            android:textColor="@color/fabi_bottom_sheet_green_color"
+            android:textSize="28pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_num"
+        android:layout_width="match_parent"
+        android:layout_height="100pt"
+        android:background="@drawable/fabi_bottom_sheet_edit_shape"
+        android:orientation="horizontal"
+        android:paddingEnd="30pt"
+        android:paddingStart="30pt"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/et_num"
+            android:layout_width="450pt"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:padding="15pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="ETH"
+            android:textColor="@color/fabi_bottom_sheet_title_color"
+            android:textSize="28pt" />
+
+        <View
+            android:layout_width="2pt"
+            android:layout_height="26pt"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="15pt"
+            android:layout_marginStart="15pt"
+            android:background="#eeeeee" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="全部出售"
+            android:textColor="@color/fabi_bottom_sheet_green_color"
+            android:textSize="28pt" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60pt"
+        android:gravity="center_vertical"
+        android:paddingEnd="30pt"
+        android:paddingStart="30pt"
+        android:text="限额 ￥1,000.00-￥42,000.00"
+        android:textColor="@color/fabi_bottom_sheet_gray_color"
+        android:textSize="28pt" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60pt"
+        android:gravity="center_vertical|right"
+        android:paddingEnd="30pt"
+        android:paddingStart="30pt"
+        android:text="实际出售 52,012451 ETH"
+        android:textColor="@color/fabi_bottom_sheet_gray_color"
+        android:textSize="24pt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40pt"
+        android:paddingEnd="30pt"
+        android:paddingStart="30pt">
+
+        <TextView
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="交易金额"
+            android:textColor="@color/fabi_bottom_sheet_gray_color"
+            android:textSize="28pt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="￥0.00"
+            android:textColor="@color/fabi_bottom_sheet_green_color"
+            android:textSize="36pt" />
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="150pt">
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="326pt"
+            android:layout_height="90pt"
+            android:background="@color/fabi_bottom_sheet_green_color"
+            android:text="60S后自动取消"
+            android:textColor="@color/white"
+            android:textSize="30pt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/bt_deal"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/bt_deal"
+            android:layout_width="326pt"
+            android:layout_height="90pt"
+            android:background="@color/fabi_bottom_sheet_green_color"
+            android:text="下单"
+            android:textColor="@color/white"
+            android:textSize="30pt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@id/bt_cancel"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

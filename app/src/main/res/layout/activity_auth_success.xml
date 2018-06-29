@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_attestation_success"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90pt"
+        android:elevation="30pt"
+        android:translationZ="30pt">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="70pt"
+            android:layout_height="70pt"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="30pt"
+            android:padding="10pt"
+            android:src="@mipmap/icon_back" />
+    </LinearLayout>
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="2pt"-->
+    <!--android:background="@color/colorHintLine" />-->
+
+
+    <Button
+        android:id="@+id/bt_next_step"
+        android:layout_width="match_parent"
+        android:layout_height="90pt"
+        android:layout_marginEnd="30pt"
+        android:layout_marginStart="30pt"
+        android:layout_marginTop="960pt"
+        android:background="@drawable/selector_login"
+        android:enabled="true"
+        android:gravity="center"
+        android:text="去交易"
+        android:textColor="@android:color/white"
+        android:textSize="36pt" />
+
+
+</LinearLayout>
